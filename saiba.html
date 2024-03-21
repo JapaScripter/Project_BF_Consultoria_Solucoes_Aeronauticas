@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="BF Aeronautica">
+    <meta name="author" content="Unilatem">
+    <html lang="pt"></html>
+    <link href="images/favicon.ico" rel="icon">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>BF Aeronautica</title>
+    <!--|Title Tab|-->
+
+    <!--|CSS Inside|-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!--|CSS Inside|-->
+
+    <!--|Script Header and Footer Import|-->
+		<script>
+      fetch("header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+    <!--|Script Header and Footer Import|-->
+  </head>
+  <body>
+    <section>
+      <!--|Header|-->
+      <header></header>
+      <!--|Header|-->
+
+      <!--|Main|-->
+      <main>
+        <section id="secf">
+            <h1 class="tt9">Formulário</h1>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form class="form" action="https://formspree.io/f/mbjnalaz" method="POST">
+                <label class="lb">
+                Nome Completo:
+                <input class="ip" type="text" name="text">
+                </label>
+                <label class="lb">
+                Telefone:
+                <input class="ip" type="tel" name="tel">
+                </label>
+                <label class="lb">
+                Email:
+                <input class="ip" type="email" name="email">
+                </label>
+                <label class="lb">
+                Enviar uma mensagem:
+                <textarea class="ta" name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button class="btf" type="submit">Enviar</button>
+            </form>
+        </section>
+      </main>
+      <!--|Main|-->
+
+      <!--|Footer|-->
+      <footer></footer>
+      <!--|Footer|-->
+
+      <!--|Script|-->
+      <script>
+      </script>
+      <!--|Script|-->
+    </section>
+  </body>
+</html>
