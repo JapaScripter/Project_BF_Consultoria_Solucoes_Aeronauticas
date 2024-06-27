@@ -275,7 +275,7 @@ padding:0;
 flex-direction:row;
 justify-content:center;
 align-items:center;
-background-image:url('images/1.jpg');
+background-image:url('images/1.webp');
 background-size:cover;
 background-position:center;
 }
@@ -299,14 +299,14 @@ align-items:flex-start;
 }
 .tt{
 /*font*/
-font-size:6vw;
+font-size:4vw;
 font-weight:700;
 text-align:justify;
 text-shadow:0.15vw 0.15vw 0.1vw rgba(11,47,79,0.2);
 /*display*/
 display:flex;
 width:100%;
-margin-right:5vw;
+margin:0 5vw 5vw 0;
 justify-content:flex-start;
 align-items:center;
 z-index:1;
@@ -397,7 +397,7 @@ padding:0;
 flex-direction:column;
 justify-content:space-around;
 align-items:center;
-background-image:url('images/8.jpg');
+background-image:url('images/8.webp');
 background-size:cover;
 background-position:center;
 }
